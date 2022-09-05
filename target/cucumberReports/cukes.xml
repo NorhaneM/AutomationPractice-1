@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="340.087">
+<testcase classname="Registration | user should be able to sign up with new account" name="user could sign up with valid credentials" time="45.933">
+<system-out><![CDATA[Given user navigate to home page............................................passed
+And user click on sign in Link..............................................passed
+When user enter his email with valid email format...........................passed
+And user click on create account............................................passed
+And user fills his personal data with valid data............................passed
+And user fills his address with valid data..................................passed
+Then user click on register button..........................................passed
+And success message is displayed............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | user could be able to log in with valid email and password" name="user could log in with valid credentials" time="44.064">
+<system-out><![CDATA[Given user navigate to URL home page........................................passed
+And user click on signIn Link...............................................passed
+When user enter his email...................................................passed
+And user enter his password.................................................passed
+Then user clicks on sign in button..........................................passed
+Then user logged in successfully............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SubCategory| user can select an item from a SubCategory" name="user can select an item from a SubCategory" time="43.815">
+<system-out><![CDATA[Given user navigate to URL home page........................................passed
+And user click on signIn Link...............................................passed
+When user enter his email...................................................passed
+And user enter his password.................................................passed
+Then user clicks on sign in button..........................................passed
+Then user logged in successfully............................................passed
+Given user hover to the Women category......................................passed
+And user click on the Blouses subCategory...................................passed
+Then user go to the Blouses page............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select resulted Blouse| user could select blouse from the resulted section" name="user could select blouse from the resulted section" time="60.449">
+<system-out><![CDATA[Given user navigate to URL home page........................................passed
+And user click on signIn Link...............................................passed
+When user enter his email...................................................passed
+And user enter his password.................................................passed
+Then user clicks on sign in button..........................................passed
+Then user logged in successfully............................................passed
+Given user hover to the Women category......................................passed
+And user click on the Blouses subCategory...................................passed
+Given user click on the resulted blouse.....................................passed
+And user add the selected blouse to the cart................................passed
+Then Blouse has been added successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout | user can checkout successfully Order" name="_2" time="102.851">
+<system-out><![CDATA[Given user navigate to URL home page........................................passed
+And user click on signIn Link...............................................passed
+When user enter his email...................................................passed
+And user enter his password.................................................passed
+Then user clicks on sign in button..........................................passed
+Then user logged in successfully............................................passed
+Given user hover to the Women category......................................passed
+And user click on the Blouses subCategory...................................passed
+Given user click on the resulted blouse.....................................passed
+And user add the selected blouse to the cart................................passed
+Then Blouse has been added successfully.....................................passed
+Given User click on proceed to checkout button..............................passed
+And User click on proceed to checkout button on the summary page............passed
+And User click on proceed to checkout button on the address page............passed
+And user agree to terms of service..........................................passed
+Then User click on proceed to checkout button on the shipping page..........passed
+And user select to pay by bank wire.........................................passed
+And User confirm his order in the payment page..............................passed
+Then Order Confirmation msg appear..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order History Page | Validate order was placed from order history page" name="Validate order was placed from order history page" time="42.715">
+<system-out><![CDATA[Given user navigate to URL home page........................................passed
+And user click on signIn Link...............................................passed
+When user enter his email...................................................passed
+And user enter his password.................................................passed
+Then user clicks on sign in button..........................................passed
+Then user logged in successfully............................................passed
+Given User click on the orders history and details button...................passed
+And User navigate to orders history and details page........................passed
+Then Order History is displayed.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

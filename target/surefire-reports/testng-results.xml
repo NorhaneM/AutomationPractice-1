@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Runner.test_Runner" duration-ms="340804" started-at="2022-08-20T06:08:55 EET" finished-at="2022-08-20T06:14:36 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="340804" started-at="2022-08-20T06:08:55 EET" finished-at="2022-08-20T06:14:36 EET">
+      <class name="Runner.test_Runner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.test_Runner@27808f31]" name="setUpClass" is-config="true" duration-ms="580" started-at="2022-08-20T06:08:55 EET" finished-at="2022-08-20T06:08:56 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@570ba13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="46026" started-at="2022-08-20T06:08:56 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:09:42 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user could sign up with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registration | user should be able to sign up with new account]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="44081" started-at="2022-08-20T06:09:42 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:10:26 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user could log in with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login | user could be able to log in with valid email and password]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="43827" started-at="2022-08-20T06:10:26 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:11:10 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can select an item from a SubCategory"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[SubCategory| user can select an item from a SubCategory]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="60467" started-at="2022-08-20T06:11:10 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:12:10 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user could select blouse from the resulted section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Select resulted Blouse| user could select blouse from the resulted section]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="102867" started-at="2022-08-20T06:12:10 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:13:53 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Checkout | user can checkout successfully Order]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.test_Runner@27808f31]" name="runScenario" duration-ms="42720" started-at="2022-08-20T06:13:53 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-20T06:14:36 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate order was placed from order history page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Order History Page | Validate order was placed from order history page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.test_Runner@27808f31]" name="tearDownClass" is-config="true" duration-ms="204" started-at="2022-08-20T06:14:36 EET" finished-at="2022-08-20T06:14:36 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.test_Runner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Runner.test_Runner -->
+</testng-results>
