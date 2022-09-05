@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>20 Aug 2022, 06:14</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">Steps_Definition.Hooks.open_browser()</td>
+              <td>6</td>
+              <td class="duration" data-value="1943333333">1.943</td>
+              <td class="duration" data-value="1943333333">3.717</td>
+              <td class="duration" data-value="11660000000">11.660</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.Hooks.quit_browser()</td>
+              <td>6</td>
+              <td class="duration" data-value="719166666">0.719</td>
+              <td class="duration" data-value="719166666">0.800</td>
+              <td class="duration" data-value="4315000000">4.315</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.CreateAccount()</td>
+              <td>1</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="duration" data-value="114000000">0.114</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.Personal_Address()</td>
+              <td>1</td>
+              <td class="duration" data-value="1407000000">1.407</td>
+              <td class="duration" data-value="1407000000">1.407</td>
+              <td class="duration" data-value="1407000000">1.407</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.Personal_Data()</td>
+              <td>1</td>
+              <td class="duration" data-value="2011000000">2.011</td>
+              <td class="duration" data-value="2011000000">2.011</td>
+              <td class="duration" data-value="2011000000">2.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.Personal_email()</td>
+              <td>1</td>
+              <td class="duration" data-value="205000000">0.205</td>
+              <td class="duration" data-value="205000000">0.205</td>
+              <td class="duration" data-value="205000000">0.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.RegisterButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="5429000000">5.429</td>
+              <td class="duration" data-value="5429000000">5.429</td>
+              <td class="duration" data-value="5429000000">5.429</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.Sign_In_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="3569000000">3.569</td>
+              <td class="duration" data-value="3569000000">3.569</td>
+              <td class="duration" data-value="3569000000">3.569</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.navigate_home()</td>
+              <td>1</td>
+              <td class="duration" data-value="28754000000">28.754</td>
+              <td class="duration" data-value="28754000000">28.754</td>
+              <td class="duration" data-value="28754000000">28.754</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC1_Registration.success_Message()</td>
+              <td>1</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.LoggedIn()</td>
+              <td>5</td>
+              <td class="duration" data-value="2099400000">2.099</td>
+              <td class="duration" data-value="2099400000">2.158</td>
+              <td class="duration" data-value="10497000000">10.497</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.LoginPassword()</td>
+              <td>5</td>
+              <td class="duration" data-value="145200000">0.145</td>
+              <td class="duration" data-value="145200000">0.238</td>
+              <td class="duration" data-value="726000000">0.726</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.Personal_email()</td>
+              <td>5</td>
+              <td class="duration" data-value="168600000">0.168</td>
+              <td class="duration" data-value="168600000">0.217</td>
+              <td class="duration" data-value="843000000">0.843</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.SignIn()</td>
+              <td>5</td>
+              <td class="duration" data-value="3081800000">3.081</td>
+              <td class="duration" data-value="3081800000">4.284</td>
+              <td class="duration" data-value="15409000000">15.409</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.Sign_In_link()</td>
+              <td>5</td>
+              <td class="duration" data-value="4140800000">4.140</td>
+              <td class="duration" data-value="4140800000">8.221</td>
+              <td class="duration" data-value="20704000000">20.704</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC2_Login.navigate_home()</td>
+              <td>5</td>
+              <td class="duration" data-value="30112600000">30.112</td>
+              <td class="duration" data-value="30112600000">33.868</td>
+              <td class="duration" data-value="150563000000">2:30.563</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC3_SubCategory.Blouses_SubCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC3_SubCategory.select_Blouses_SubCategory()</td>
+              <td>3</td>
+              <td class="duration" data-value="5166666666">5.166</td>
+              <td class="duration" data-value="5166666666">5.854</td>
+              <td class="duration" data-value="15500000000">15.500</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC3_SubCategory.select_Women_Category()</td>
+              <td>3</td>
+              <td class="duration" data-value="197666666">0.197</td>
+              <td class="duration" data-value="197666666">0.216</td>
+              <td class="duration" data-value="593000000">0.593</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC4_Blouse.Add_toCart()</td>
+              <td>2</td>
+              <td class="duration" data-value="4279000000">4.279</td>
+              <td class="duration" data-value="4279000000">4.280</td>
+              <td class="duration" data-value="8558000000">8.558</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC4_Blouse.select_Blouse()</td>
+              <td>2</td>
+              <td class="duration" data-value="3412000000">3.412</td>
+              <td class="duration" data-value="3412000000">4.259</td>
+              <td class="duration" data-value="6824000000">6.824</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC4_Blouse.success_msg()</td>
+              <td>2</td>
+              <td class="duration" data-value="2082000000">2.082</td>
+              <td class="duration" data-value="2082000000">2.085</td>
+              <td class="duration" data-value="4164000000">4.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.Bank_Wire()</td>
+              <td>1</td>
+              <td class="duration" data-value="7655000000">7.655</td>
+              <td class="duration" data-value="7655000000">7.655</td>
+              <td class="duration" data-value="7655000000">7.655</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.CheckBox()</td>
+              <td>1</td>
+              <td class="duration" data-value="260000000">0.260</td>
+              <td class="duration" data-value="260000000">0.260</td>
+              <td class="duration" data-value="260000000">0.260</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.CheckoutBtn1()</td>
+              <td>1</td>
+              <td class="duration" data-value="2138000000">2.138</td>
+              <td class="duration" data-value="2138000000">2.138</td>
+              <td class="duration" data-value="2138000000">2.138</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.CheckoutBtn2()</td>
+              <td>1</td>
+              <td class="duration" data-value="1759000000">1.759</td>
+              <td class="duration" data-value="1759000000">1.759</td>
+              <td class="duration" data-value="1759000000">1.759</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.CheckoutBtn3()</td>
+              <td>1</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="duration" data-value="2329000000">2.329</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.CheckoutBtn4()</td>
+              <td>1</td>
+              <td class="duration" data-value="4682000000">4.682</td>
+              <td class="duration" data-value="4682000000">4.682</td>
+              <td class="duration" data-value="4682000000">4.682</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.ConfirmBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="24045000000">24.045</td>
+              <td class="duration" data-value="24045000000">24.045</td>
+              <td class="duration" data-value="24045000000">24.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC5_Checkout.success_msg1()</td>
+              <td>1</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC6_Order_History.Displayed_Msg()</td>
+              <td>1</td>
+              <td class="duration" data-value="2057000000">2.057</td>
+              <td class="duration" data-value="2057000000">2.057</td>
+              <td class="duration" data-value="2057000000">2.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC6_Order_History.orders()</td>
+              <td>1</td>
+              <td class="duration" data-value="175000000">0.175</td>
+              <td class="duration" data-value="175000000">0.175</td>
+              <td class="duration" data-value="175000000">0.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps_Definition.SC6_Order_History.ordersBtn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2622000000">2.622</td>
+              <td class="duration" data-value="2622000000">2.622</td>
+              <td class="duration" data-value="2622000000">2.622</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>33</td>
+            <td>74</td>
+            <td class="duration">4.591</td>
+            <td class="duration">2:30.563</td>
+            <td class="duration">5:39.761</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
